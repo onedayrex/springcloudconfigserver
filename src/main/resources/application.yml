@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/onedayrex/spring-config-repo.git
+          search-paths: spring-config-repo
+server:
+  port: 8888
